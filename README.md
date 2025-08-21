@@ -47,13 +47,13 @@ This hybrid approach mimics real-world applications where unexpected events (lik
 
 *   **Language:** Python (3.8+)
 *   **Core Libraries:**
-    *   **TensorFlow / Keras** or **PyTorch** for model building and training.
+    *   **TensorFlow / Keras** for model building and training.
     *   **Scikit-learn** for data splitting, preprocessing, and performance metrics (e.g., confusion matrix).
     *   **Pandas** for data manipulation.
     *   **NumPy** for numerical operations.
     *   **Matplotlib / Seaborn** for plotting and visualization.
 *   **Platform:**
-    *   **Jupyter Notebooks / Labs** for experimentation and exploration.
+    *   **Jupyter Notebooks** for experimentation and exploration.
     *   **Google Colab** is an excellent choice as it provides free GPU access for faster model training.
     *   **GitHub** for version control and collaboration.
 
@@ -176,4 +176,4 @@ Data that passes the anomaly check is fed into a Temporal Convolutional Network 
 ## Contributors
 
 *   Leiyese (github.com/leiyese/)
-*   [Friend's Name] ([Friend's GitHub Profile Link])
+*   superPiroz (github.com/SuperPiroz)
