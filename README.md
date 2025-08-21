@@ -116,7 +116,7 @@ This project uses the **Human Activity Recognition Using Smartphones Dataset**.
         ```
 
 ## Project Structure
-├── data/
+├── data/har_using_smartphones
 │ └── UCI HAR Dataset/ # Folder containing the dataset files
 ├── notebooks/
 │ ├── 1_Data_Exploration.ipynb
