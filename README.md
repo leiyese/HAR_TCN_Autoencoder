@@ -131,7 +131,6 @@ This project uses the **Human Activity Recognition Using Smartphones Dataset**.
 ├── train_autoencoder.py
 ├── train_tcn.py
 ├── run_inference.py
-├── download_data.py
 ├── requirements.txt
 └── README.md
 
