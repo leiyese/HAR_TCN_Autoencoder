@@ -1,0 +1,118 @@
+{
+  "reconstruction_quality": {
+    "WALKING": {
+      "mean_error": 27.742237091064453,
+      "std_error": 12.76004695892334,
+      "median_error": 25.375804901123047,
+      "max_error": 82.63179016113281,
+      "min_error": 10.921093940734863,
+      "sample_count": 496
+    },
+    "WALKING_UPSTAIRS": {
+      "mean_error": 29.822490692138672,
+      "std_error": 11.047743797302246,
+      "median_error": 26.51698112487793,
+      "max_error": 72.60259246826172,
+      "min_error": 9.573884963989258,
+      "sample_count": 471
+    },
+    "WALKING_DOWNSTAIRS": {
+      "mean_error": 44.46186828613281,
+      "std_error": 16.432519912719727,
+      "median_error": 44.161155700683594,
+      "max_error": 89.68804168701172,
+      "min_error": 14.40396785736084,
+      "sample_count": 420
+    },
+    "SITTING": {
+      "mean_error": 0.24787306785583496,
+      "std_error": 0.7800496816635132,
+      "median_error": 0.047204237431287766,
+      "max_error": 9.744194030761719,
+      "min_error": 0.009989053942263126,
+      "sample_count": 491
+    },
+    "STANDING": {
+      "mean_error": 0.33483389019966125,
+      "std_error": 0.8583775162696838,
+      "median_error": 0.06499296426773071,
+      "max_error": 8.07891845703125,
+      "min_error": 0.011123774573206902,
+      "sample_count": 532
+    },
+    "LAYING": {
+      "mean_error": 0.3340241611003876,
+      "std_error": 0.8204662203788757,
+      "median_error": 0.1055472120642662,
+      "max_error": 14.228914260864258,
+      "min_error": 0.0450870543718338,
+      "sample_count": 537
+    },
+    "OVERALL": {
+      "mean_error": 15.934759140014648,
+      "std_error": 19.62908935546875,
+      "threshold": 1.0399459600448608
+    }
+  },
+  "anomaly_detection": {
+    "confusion_matrix": [
+      [
+        1455,
+        105
+      ],
+      [
+        0,
+        1387
+      ]
+    ],
+    "accuracy": 0.9643705463182898,
+    "precision": 0.9296246648793566,
+    "recall": 1.0,
+    "f1_score": 0.9635290031260855,
+    "specificity": 0.9326923076923077,
+    "roc_auc": 0.9999847484887139,
+    "true_positives": 1387,
+    "true_negatives": 1455,
+    "false_positives": 105,
+    "false_negatives": 0,
+    "threshold": 1.0399459600448608
+  },
+  "model_config": {
+    "model_config": {
+      "input_shape": [
+        128,
+        9
+      ],
+      "latent_dim": 32,
+      "filters": [
+        16,
+        32,
+        64
+      ],
+      "kernel_size": 3,
+      "activation": "relu",
+      "dropout_rate": 0.2
+    },
+    "training_config": {
+      "batch_size": 32,
+      "epochs": 50,
+      "learning_rate": 0.001,
+      "validation_split": 0.2,
+      "early_stopping_patience": 15,
+      "reduce_lr_patience": 10,
+      "min_lr": 1e-07
+    },
+    "metrics": {
+      "train_mse_mean": 0.2598453760147095,
+      "train_mse_std": 0.8790251612663269,
+      "test_mse_mean": 0.30718478560447693,
+      "test_mse_std": 0.8222689032554626,
+      "anomaly_threshold": 1.0399459600448608,
+      "train_anomaly_rate": 0.05015982296533071,
+      "test_anomaly_rate": 0.0673076923076923
+    },
+    "timestamp": "20250822_095830",
+    "anomaly_threshold": 1.0399459600448608
+  },
+  "evaluation_timestamp": "2025-08-22T10:18:12.393571"
+}
